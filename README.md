@@ -20,8 +20,8 @@
 - pydub 
 - pymysql
 
-# Requisitos:
-PARA CONECTAR A UMA DATABASE EXTERNA:
+# Requisitos para conectar a uma Database externa:
+
 1. de permissão a maquina que vai conectar no seu serviço mysql:
     sudo mysql -u root -p
     GRANT ALL  ON * . * TO 'usuario'@'ip da maquina que vai conectar' IDENTIFIED BY 'senha';
