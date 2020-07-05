@@ -22,17 +22,17 @@
 
 # Requisitos para conectar a uma Database externa:
 
-1. de permissão a maquina que vai conectar no seu serviço mysql:
-    sudo mysql -u root -p
-    GRANT ALL  ON * . * TO 'usuario'@'ip da maquina que vai conectar' IDENTIFIED BY 'senha';
-    FLUSH PRIVILEGES;
+1. de permissão a maquina que vai conectar no seu serviço mysql:<br>
+    sudo mysql -u root -p<br>
+    GRANT ALL  ON * . * TO 'usuario'@'ip da maquina que vai conectar' IDENTIFIED BY 'senha';<br>
+    FLUSH PRIVILEGES;<br>
 
-2. edite o arquivo de configuração do mysql caso necessario:    
-    sudo nano  /etc/mysql/mariadb.conf.d/50-server.cnf
-troque por: 
-    bind-address  = 0.0.0.0
+2. edite o arquivo de configuração do mysql caso necessario:    <br>
+    sudo nano  /etc/mysql/mariadb.conf.d/50-server.cnf<br>
+troque por: <br>
+    bind-address  = 0.0.0.0<br>
 
-3. libere a porta para conexao externa no firewall:
-    sudo ufw allow 3306
-    sudo ufw allow 3306/tcp
-    sudo ufw allow 3306/udp
+3. libere a porta para conexao externa no firewall:<br>
+    sudo ufw allow 3306<br>
+    sudo ufw allow 3306/tcp<br>
+    sudo ufw allow 3306/udp<br>
